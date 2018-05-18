@@ -1,0 +1,140 @@
+.header
+	position: absolute
+	z-index: 3
+	top: 0
+	left: 0
+	right: 0
+	padding: 40px 60px
+	margin: 0
+	min-width: 1170px 
+	width: 100%
+	-webkit-transition: all .3s 
+	-moz-transition: all .3s 
+	-ms-transition: all .3s 
+	-o-transition: all .3s 
+	transition: all .3s 
+	&-content
+		&:before,
+		&:after
+			display: table
+			content: ""
+			line-height: 0
+		.logotext
+			display: block
+			float: left
+			padding: 0 0 0 130px
+			background: url(../img/logo.svg) 0 50% no-repeat
+			color: #FFF
+			text-decoration: none
+			line-height: 100px 
+			.slogan
+				position: relative
+				display: inline-block 
+				vertical-align: middle
+				margin: 0 0 0 30px
+				+rfs(16px)
+				line-height: 22px
+				font-weight: 600  
+				&:before
+					content: ""
+					position: absolute
+					width: 2px
+					height: 54px
+					background: #FFF
+					left: -30px
+					top: 50%
+					margin-top: -27px
+		.headbar
+			float: right
+			position: relative
+			padding: 0 140px 0 0
+			text-align: right
+			
+			.modheadcontacts
+				position: relative
+				+rfs(17px)
+				line-height: 1
+				font-weight: 300
+				color: #FFF
+				padding: 0 0 0 33px  
+				.callbackwrap
+					margin-top: 9px
+					transition: all .3s;
+					.callbacklink
+						display: inline-block
+						padding: 0 0 3px 0
+						+rfs(14px) 
+						line-height: 1
+						font-weight: 400 
+						color: #fe0000
+						border-bottom: 1px dashed #fe0000
+						
+						&:before
+							content: ""
+							position: absolute
+							height: 14px
+							width: 14px 
+							background: url("../img/ico_callback.png") 50% 50% no-repeat
+							left: -21px
+							top: 50%
+							margin-top: -9px 
+							-webkit-transition: all .4s 
+							-moz-transition: all .4s 
+							-ms-transition: all .4s 
+							-o-transition: all .4s 
+							transition: all .4s 
+						&:hover
+							&:before
+								transform: rotate(-270deg)
+						
+				&:before
+					content: ""
+					position: absolute
+					left: 0
+					top: 0
+					width: 18px
+					height: 18px
+					background: url(../img/ico_phone_white.svg) 50% 50% / contain no-repeat
+				a
+					display: inline-block
+					position: relative
+					color: #FFF
+					font-weight: 700
+					text-decoration: none 
+					&:hover
+						color: red  
+				span
+					margin: 0 9px
+					display: inline-block
+    			
+			.modlang
+				position: absolute
+				right: 70px
+				width: 47px
+				height: 47px
+				top: 0
+				border: 1px solid #989898 
+				text-align: center
+				font-size: 16px
+				line-height: 45px
+				text-transform: uppercase
+				color: #FFF 
+				&:hover
+					border: 1px solid #f00
+				   
+			.opennav,
+			.navbtn
+				position: absolute
+				right: 0
+				top: 0
+				width: 47px
+				height: 47px
+				border: 1px solid #989898 
+				cursor: pointer
+				background: url(../img/ico_nav.png) 50% 50% no-repeat
+				&:hover
+					border: 1px solid #f00 	  		
+				 
+				
+		&:after
+			clear: both

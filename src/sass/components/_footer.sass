@@ -1,0 +1,181 @@
+.footer
+	height: 265px
+	position: absolute
+	left: 0
+	right: 0
+	bottom: 0
+	min-width: 100%
+	background: #140904
+	color: #635856   
+	&-content
+		.nav
+    		.menu
+    			display: block
+    			margin: 22px 0 0 0
+    			padding: 0
+    			font-size: 13px
+    			font-weight: 700
+    			text-transform: uppercase 
+    			li
+    				display: inline-block
+    				vertical-align: top
+    				margin: 0 10px
+    				a
+    					color: #635856
+    					text-decoration: none
+    					&:hover
+    					 	color: #fff
+		position: relative
+		padding: 50px 300px
+		text-align: center
+		width: 1170px
+		margin: 0 auto
+		&__logo
+			display: inline-block
+			padding: 0 0 0 88px
+			position: absolute
+			left: 0
+			top: 50%
+			margin-top: -32px
+			height: 63px
+			line-height: 63px
+			background: url(../img/logored.png) 0% 50%/contain no-repeat 
+			float: left
+			color: #FFF
+			text-decoration: none 
+			.slogan
+				background: url(../img/sloganru_brown.svg) 0% 50%/contain no-repeat 
+				margin: 0 0 0 25px
+				position: relative
+				display: inline-block
+				width: 120px
+				height: 42px
+				vertical-align: middle
+				&:before
+    				position: absolute
+   					top: 50%
+    				width: 2px
+    				height: 54px
+    				content: ""
+    				margin-top: -27px
+    				background: #635856
+    				left: -25px
+		&__contacts
+			+rfs(17px)
+			line-height: 1
+			font-weight: 300 
+			.modheadcontacts
+				position: relative
+				padding: 0 33px
+				display: inline-block 
+				.callbackwrap
+					margin-top: 17px
+					transition: all .3s;
+					.callbacklink
+						display: inline-block
+						padding: 0 0 3px 0
+						+rfs(14px) 
+						line-height: 1
+						font-weight: 400 
+						color: #fe0000
+						border-bottom: 1px dashed #fe0000
+						
+						&:before
+							content: ""
+							position: absolute
+							height: 14px
+							width: 14px 
+							background: url("../img/ico_callback.png") 50% 50% no-repeat
+							left: -21px
+							top: 50%
+							margin-top: -9px 
+							-webkit-transition: all .4s 
+							-moz-transition: all .4s 
+							-ms-transition: all .4s 
+							-o-transition: all .4s 
+							transition: all .4s 
+						&:hover
+							&:before
+								transform: rotate(-270deg)
+						
+				&:before
+					content: ""
+					position: absolute
+					left: 0
+					top: 0
+					width: 18px
+					height: 18px
+					background: url(../img/ico_phone_grey.svg) 50% 50% / contain no-repeat
+				a
+					display: inline-block
+					position: relative
+					color: #635856
+					font-weight: 700
+					text-decoration: none 
+					&:hover
+						color: #fff  
+				span
+					margin: 0 9px
+					display: inline-block
+	.footercallback
+		position: absolute
+		z-index: 2
+		top: 50px
+		right: 0
+		display: block
+		width: 254px
+		text-align: center
+		color: #FFF 
+		&-content
+			display: inline-block
+			vertical-align: middle
+			line-height: 1.2
+			&__title
+				margin: 0
+				padding: 0
+				+rfs(19px)
+				line-height: 1
+				font-weight: 300 
+				b
+					display: block
+					font-weight: 700
+					letter-spacing: 1px   
+			&__btns
+				margin: 15px 0 0 0
+				a
+					color: #FFF
+					text-decoration: none
+					display: inline-block
+					vertical-align: middle
+					padding: 15px 30px
+					+rfs(12px)
+					line-height: 17px
+					font-weight: 700
+					text-shadow: 0px 1px 1px rgba(0,0,0,0.48)
+					text-align: center
+					text-transform: uppercase
+					background-color: #f00
+					border: none
+					outline: none 
+					box-shadow: 0px 3px 0px 0px #9b0101
+					border-radius: 50px
+					transition: all .3s 
+					&:hover
+						background-color: #ce0000       
+	.footersocial
+		margin: 35px 0 0 0
+		a 
+			margin: 0px 8px 
+		.soc_fb
+			background: url("../img/ico_facebook.svg") 50% 50%/contain no-repeat 
+		.soc_tw	
+			background: url("../img/ico_twitter.svg") 50% 50%/contain no-repeat
+		.soc_in	
+			background: url("../img/ico_linkedin.svg") 50% 50%/contain no-repeat
+		.soc_gp	
+			background: url("../img/ico_gplus.svg") 50% 50%/contain no-repeat
+		[class^="soc_"] 
+    		display: inline-block
+    		vertical-align: top
+    		width: 19px
+    		height: 19px			
