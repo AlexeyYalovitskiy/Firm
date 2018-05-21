@@ -1,2 +1,2 @@
-function listShow(){$(function(){$(".parent .showmore").click(function(){$(this).siblings(".parent ul").toggle(),$(this).toggleClass("open")})})}$(window).ready(function(){listShow()});
+function headerShow(){$(window).scroll(function(){1<$(this).scrollTop()?$("header").addClass("sticky"):$("header").removeClass("sticky")})}function listShow(){$(function(){$(".parent .showmore").click(function(){$(this).siblings(".parent ul").toggle(),$(this).toggleClass("open")})})}window.addEventListener("load",function(){1<$(this).scrollTop()?$("header").addClass("sticky"):$("header").removeClass("sticky")}),$(window).ready(function(){listShow(),headerShow()});
 //# sourceMappingURL=main.js.map

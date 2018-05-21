@@ -1,12 +1,11 @@
+
 .advice
-	p
-		margin-top: 30px
 	background: url(../img/aboutbg.jpg) 50% 50%/cover no-repeat
 	color: #FFF
 	+rfs(16px)
-	line-height: 25px 
+	line-height: 25px
 	&_modcontent
-		padding: 115px 610px 115px 60px
+		padding: 115px 610px 115px 60px 
 		position: relative
 		.decortitle
    			text-transform: none
@@ -22,25 +21,22 @@
    				bottom: 26px
    				content: ""
    				position: absolute
-   				left: -13%
+   				left: -11%
    				width: 42px
    				height: 4px
-   				background: #f00 	
+   				background: #f00
 	&_pos_content
-		width: 1170px
+		max-width: 1170px
 		margin: 0 auto 
-		&:before,
-		&:after
-			display: table
-    		content: ""
-    		line-height: 0
-		&:after
-    		clear: both
 .consaltform
     position: absolute
     right: -10%
-    top: 94px
+    top: 120px
     width: 50%
+    @media(max-width: 1400px)
+        right: 0%
+    +r(lg)
+        position: static
     .rsform-block-formtitle
     	margin: 0 0 20px 0
     	text-align: center
@@ -56,8 +52,6 @@
     		span  
     			display: block
     #inline
-    	padding: 10px
-    	margin: 0 auto
     	.txt
     		display: inline-block
    			background-color: transparent
@@ -94,8 +88,6 @@
     	#send
     		vertical-align: middle
     		display: inline-block
-    		position: absolute
-    		left: 37%
     		+rfs(12px)
     		line-height: 17px
     		font-weight: 700
@@ -120,20 +112,32 @@
     		
     		&:hover
     			background-color: #ce0000 
-    		 
-    		  
-			
-				
 
+#inline
+    margin: 0 auto
+    text-align: center
+    padding: 10px
+.titles
+    margin-top: 30px
+    text-indent: 25px
+    text-align: justify  
+ 
+@media(max-width: 1100px)
+    .decortitle
+        &:before
+            display: none
 
-				
-    // 		   color: #FFFFFF;
-    // display: block;
-    // cursor: pointer;
-    // padding: 5px 11px;
-    // font-size: 1.2em;
-    // border: solid 1px #F9F9F9;
-    // border-radius: 2px;
-    // background: #70C6B9;
-    // width: 210px;
-    // margin-bottom: 20px;
+@media(max-width: 991px)
+    .advice
+        &_modcontent
+            padding: 50px 70px
+            .decortitle
+                text-align: center
+    .consaltform
+        width: 100%
+        margin-top: 50px 
+        padding: 0 20px
+@media(max-width: 500px)
+    .advice
+        &_modcontent
+            padding: 50px 35px

@@ -7,7 +7,7 @@
 			display: table
    			content: ""
     		line-height: 0
-		width: 1170px
+		max-width: 1170px
 		margin: 0 auto
 		&__title
 			display: block
@@ -34,15 +34,23 @@
 		&__list
 			-webkit-align-items: baseline
 			align-items: baseline
-		.flexboxlist
+		.col4list
+			margin: 0 -4px
+			align-items: baseline
 			display: flex
 			-webkit-flex-wrap: wrap
 			-ms-flex-wrap: wrap
 			flex-wrap: wrap
-		.col4list
-			margin: 0 -4px
-			align-items: baseline;
+			-webkit-justify-content: space-between
+			justify-content: space-between
 			&-item
+				+r(xl)
+					width: calc(50% - 16px)
+					margin: 8px 
+				+r(xs)
+					width: calc(100% - 32px)
+					min-height: 1px 
+					margin: 8px 16px	
 				line-height: 20px;
 				width: calc(25% - 8px)
 				margin: 4px

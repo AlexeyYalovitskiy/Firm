@@ -6,17 +6,27 @@
 	font-style: italic
 	text-align: left
 	min-height: 555px 
+	+r(xl)
+		background: url("../img/cytatabg.jpg") 30% 0%/cover no-repeat
+	+r(sm)
+		background: url(../img/cytatabgmob.png) 50% 100% no-repeat #f0efef
 	.content
-		padding: 155px 0 155px 630px
+		padding: 155px 20px 155px 580px
 		margin: 0 auto
-		width: 1170px
+		max-width: 1170px
+		+r(sm)
+			padding: 30px 20px 550px 20px
+			text-align: center
 		.qoute
 			margin: 0
 			-webkit-box-sizing: border-box
 			-moz-box-sizing: border-box
 			box-sizing: border-box
-
+			+r(sm)
+				text-align: center
 		.autor
+			+r(sm)
+				margin: 0px
 			&:before
 			 	content: ""
 			 	position: absolute 
@@ -25,6 +35,8 @@
 			 	top: 0
 			 	left: 0
 			 	background: #f00
+			 	+r(sm)
+			 		display: none
 			position: relative
 			margin: 24px 0 0 0
 			padding: 24px 0 0 0
